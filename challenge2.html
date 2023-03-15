@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul class="topnav">
+        <li><a href="https://www.w3schools.com/">INVENTORY</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="https://www.w3schools.com/">GALLERY</a></li>
+        <li><a href="product.html">PRODUCT</a></li>
+        <li><a href="challenge2.html">HOME</a></li>
+      </ul>
+    </nav>
+
+    <div class="flex-container">
+      <div>
+        <img src="1.png" />
+      </div>
+      <div class="biodata">
+        <h1 id="nama">Rifqiyah Ramadani</h1>
+        <p id="role">Front End Designer</p>
+        <div class="button">
+          <button class="kontak" onclick="editBiodata()" id="edit-btn">
+            Edit
+          </button>
+          <br />
+          <button class="resume">Resume</button>
+        </div>
+      </div>
+
+      <div class="biodata1">
+        <pre style="font-family: Arial, Helvetica, sans-serif">
+Availability             : </pre
+        >
+        <pre style="font-family: Arial, Helvetica, sans-serif">
+Usia                        : </pre
+        >
+        <pre style="font-family: Arial, Helvetica, sans-serif">
+Alamat                    :</pre
+        >
+        <pre style="font-family: Arial, Helvetica, sans-serif">
+Pengalaman           : </pre
+        >
+        <pre style="font-family: Arial, Helvetica, sans-serif">
+Email                       : </pre
+        >
+      </div>
+
+      <div class="biodata-isi">
+        <pre id="availability"style="font-family: Arial, Helvetica, sans-serif">Full Time</pre>
+        <pre id="usia" style="font-family: Arial, Helvetica, sans-serif">21 tahun</pre>
+        <pre id="lokasi" style="font-family: Arial, Helvetica, sans-serif">Jambi</pre>
+        <pre id="pengalaman" style="font-family: Arial, Helvetica, sans-serif">Bendahara</pre>
+        <pre id="email" style="font-family: Arial, Helvetica, sans-serif">rifqiyahramadani@gmail.com</pre>
+      </div>
+    </div>
+
+    <div class="container">
+      <form id="form">
+        <div class="form-group mt-4 mb-4">
+          <label for="nama" class="label" id="nama-label">Name:</label>
+          <input type="text" class="form-control" id="nama-input" name="nama" />
+        </div>
+        <div class="form-group mb-4">
+          <label for="role" class="label" id="role-label">Role:</label>
+          <input type="text" class="form-control" id="role-input" name="role" />
+        </div>
+        <div class="form-group mb-4">
+          <label for="availability" class="label" id="availability-label">Availability:</label>
+          <input type="text" class="form-control" id="availability-input" name="availability"/>
+        </div>
+        <div class="form-group mb-4">
+          <label for="usia" class="label" id="usia-label">Usia:</label>
+          <input type="text" class="form-control" id="usia-input" name="usia" />
+        </div>
+        <div class="form-group mb-4">
+          <label for="lokasi" class="label" id="lokasi-label">Lokasi:</label>
+          <input type="text" class="form-control" id="lokasi-input" name="lokasi"/>
+        </div>
+        <div class="form-group mb-4">
+          <label for="pengalaman" class="label" id="pengalaman-label">Pengalaman:</label>
+          <input type="text" class="form-control" id="pengalaman-input" name="pengalaman"/>
+        </div>
+        <div class="form-group mb-4">
+          <label for="email" class="label" id="email-label">Email:</label>
+          <input type="text" class="form-control" id="email-input" name="email"/>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-success" id="btn-simpan">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
